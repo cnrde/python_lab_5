@@ -9,7 +9,7 @@ if __name__ == "__main__":
         exit(1)
     a = x
     S, k = a, 1
-    while math.fabs(a) > EPS:
+    while math.fabs(a) > ESP:
         a *= x * k / (k + 1) **  2
         S += a
         k += 1
